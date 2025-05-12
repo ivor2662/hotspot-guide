@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>開啟個人熱點教學</title>
+  <style>
+    :root {
+      --primary-color: #2563eb;
+      --bg-light: #f9fafb;
+      --bg-step: #f3f4f6;
+      --text-main: #1f2937;
+      --text-title: #111827;
+      --text-muted: #6b7280;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: var(--bg-light);
+      margin: 0;
+      padding: 1rem;
+      color: var(--text-main);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: var(--text-title);
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      color: var(--primary-color);
+    }
+
+    .step {
+      background-color: var(--bg-step);
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 0.5rem;
+      }
+
+      .container {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      .step {
+        font-size: 0.95rem;
+        padding: 0.6rem 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>請依照以下步驟開啟手機的個人熱點</h1>
+
+    <h2>📱 Android 裝置</h2>
+    <div class="step">1. 打開「設定」App</div>
+    <div class="step">2. 點選「網路與網際網路」或「連線」</div>
+    <div class="step">3. 點選「個人熱點」或「行動無線基地台」</div>
+    <div class="step">4. 開啟「行動熱點」開關</div>
+    <div class="step">5. 確認熱點名稱與密碼，刷卡機將自動連線</div>
+
+    <h2>🍎 iPhone 裝置</h2>
+    <div class="step">1. 開啟「設定」App</div>
+    <div class="step">2. 點選「個人熱點」</div>
+    <div class="step">3. 開啟「允許其他人加入」</div>
+    <div class="step">4. 確認熱點密碼，並等待刷卡機連線</div>
+
+    <div class="footer">
+      如無法找到設定，請參考手機品牌官方說明或聯繫客服協助。
+    </div>
+  </div>
+</body>
+</html>
