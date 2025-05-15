@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Android 熱點設定教學</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 1rem;
+      color: #1f2937;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #111827;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      color: #2563eb;
+    }
+
+    .step {
+      background-color: #f3f4f6;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+
+    .accordion {
+      background-color: #eef2ff;
+      border: none;
+      outline: none;
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      text-align: left;
+      cursor: pointer;
+      border-radius: 10px;
+      margin-top: 0.5rem;
+      color: #1f2937;
+      transition: background-color 0.3s;
+    }
+
+    .accordion:hover {
+      background-color: #e0e7ff;
+    }
+
+    .panel {
+      padding: 0 1rem 1rem;
+      display: none;
+      background-color: #f0f4ff;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .panel p {
+      margin: 0.5rem 0;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+      text-align: center;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const acc = document.getElementsByClassName("accordion");
+      for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          const panel = this.nextElementSibling;
+          panel.style.display = panel.style.display === "block" ? "none" : "block";
+        });
+      }
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Android 熱點設定教學</h1>
+
+    <div class="step">1. 打開「設定」App</div>
+    <div class="step">2. 點選「網路與網際網路」或「連線」</div>
+    <div class="step">3. 點選「個人熱點」或「行動無線基地台」</div>
+    <div class="step">4. 開啟「行動熱點」開關</div>
+    <div class="step">5. 確認熱點名稱與密碼，刷卡機將自動連線</div>
+
+    <h2>各品牌設定說明</h2>
+
+    <button class="accordion">Samsung（三星）</button>
+    <div class="panel">
+      <p>設定 → 連接 → 行動無線基地台與網路共用 → 行動無線基地台 → 開啟</p>
+    </div>
+
+    <button class="accordion">Xiaomi（小米 / 紅米）</button>
+    <div class="panel">
+      <p>設定 → 可攜式熱點 → WLAN 可攜式熱點 → 開啟</p>
+    </div>
+
+    <button class="accordion">OPPO / realme / OnePlus</button>
+    <div class="panel">
+      <p>設定 → 其他無線連接方式 → 個人熱點 → Wi-Fi 熱點 → 開啟</p>
+    </div>
+
+    <button class="accordion">ASUS（ZenFone）</button>
+    <div class="panel">
+      <p>設定 → 網路與網際網路 → 熱點與網路共用 → Wi-Fi 熱點 → 開啟</p>
+    </div>
+
+    <button class="accordion">Sony Xperia</button>
+    <div class="panel">
+      <p>設定 → 網路與網際網路 → 熱點與網路共用 → 可攜式 Wi-Fi 熱點 → 開啟</p>
+    </div>
+
+    <button class="accordion">Google Pixel（原生 Android）</button>
+    <div class="panel">
+      <p>設定 → 網路與網際網路 → 熱點與網路共用 → Wi-Fi 熱點 → 開啟</p>
+    </div>
+
+    <div class="footer">
+      如無法找到設定，請參考手機品牌官方說明或聯繫客服協助。
+    </div>
+  </div>
+</body>
+</html>
