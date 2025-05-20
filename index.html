@@ -3,147 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>開啟個人熱點教學</title>
+  <title>熱點設定首頁</title>
   <style>
-    :root {
-      --primary-color: #2563eb;
-      --bg-light: #f9fafb;
-      --bg-step: #f3f4f6;
-      --text-main: #1f2937;
-      --text-title: #111827;
-      --text-muted: #6b7280;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       font-family: "Segoe UI", sans-serif;
-      background-color: var(--bg-light);
+      background-color: #f9fafb;
       margin: 0;
       padding: 1rem;
-      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
 
     .container {
-      max-width: 800px;
-      margin: auto;
+      text-align: center;
       background: white;
       padding: 1.5rem;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      width: 100%;
+      max-width: 400px;
     }
 
     h1 {
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
-      color: var(--text-title);
-      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      color: #111827;
     }
 
-    h2 {
-      font-size: 1.2rem;
-      margin-top: 1.5rem;
-      color: var(--primary-color);
-    }
-
-    .step {
-      background-color: var(--bg-step);
-      padding: 0.75rem 1rem;
-      border-radius: 8px;
-      margin: 0.5rem 0;
-      font-size: 1rem;
-    }
-
-    .footer {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      text-align: center;
-    }
-
-    .brand-section {
-      margin-top: 2rem;
-      background-color: #eef2ff;
+    .button {
+      display: block;
       padding: 1rem;
-      border-radius: 10px;
+      margin: 1rem 0;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s;
     }
 
-    .brand-section h3 {
-      margin-top: 0.5rem;
-      color: #374151;
-      font-size: 1.1rem;
+    .android {
+      background-color: #34d399;
+    }
+    .android:hover {
+      background-color: #10b981;
     }
 
-    .brand-section p {
-      margin: 0.4rem 0 1rem;
-      font-size: 0.95rem;
-      color: #374151;
+    .iphone {
+      background-color: #60a5fa;
     }
-
-    @media (max-width: 600px) {
-      body {
-        padding: 0.5rem;
-      }
-
-      .container {
-        padding: 1rem;
-      }
-
-      h1 {
-        font-size: 1.4rem;
-      }
-
-      .step {
-        font-size: 0.95rem;
-        padding: 0.6rem 0.9rem;
-      }
+    .iphone:hover {
+      background-color: #3b82f6;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>請依照以下步驟開啟手機的個人熱點</h1>
-
-    <h2>📱 Android 裝置</h2>
-    <div class="step">1. 打開「設定」App</div>
-    <div class="step">2. 點選「網路與網際網路」或「連線」</div>
-    <div class="step">3. 點選「個人熱點」或「行動無線基地台」</div>
-    <div class="step">4. 開啟「行動熱點」開關</div>
-    <div class="step">5. 確認熱點名稱與密碼，刷卡機將自動連線</div>
-
-    <h2>🍎 iPhone 裝置</h2>
-    <div class="step">1. 開啟「設定」App</div>
-    <div class="step">2. 點選「個人熱點」</div>
-    <div class="step">3. 開啟「允許其他人加入」</div>
-    <div class="step">4. 確認熱點密碼，並等待刷卡機連線</div>
-
-    <div class="brand-section">
-      <h2>📌 各品牌 Android 手機熱點設定參考</h2>
-
-      <h3>Samsung（三星）</h3>
-      <p>設定 → 連接 → 行動無線基地台與網路共用 → 行動無線基地台 → 開啟</p>
-
-      <h3>Xiaomi（小米 / 紅米）</h3>
-      <p>設定 → 可攜式熱點 → WLAN 可攜式熱點 → 開啟</p>
-
-      <h3>OPPO / realme / OnePlus</h3>
-      <p>設定 → 其他無線連接方式 → 個人熱點 → Wi-Fi 熱點 → 開啟</p>
-
-      <h3>ASUS（ZenFone）</h3>
-      <p>設定 → 網路與網際網路 → 熱點與網路共用 → Wi-Fi 熱點 → 開啟</p>
-
-      <h3>Sony Xperia</h3>
-      <p>設定 → 網路與網際網路 → 熱點與網路共用 → 可攜式 Wi-Fi 熱點 → 開啟</p>
-
-      <h3>Google Pixel（原生 Android）</h3>
-      <p>設定 → 網路與網際網路 → 熱點與網路共用 → Wi-Fi 熱點 → 開啟</p>
-    </div>
-
-    <div class="footer">
-      如無法找到設定，請參考手機品牌官方說明或聯繫客服協助。
-    </div>
+    <h1>請選擇您的手機系統</h1>
+    <a href="https://ivor2662.github.io/hotspot-guide/android-guide.html" class="button android">Android 熱點教學</a>
+    <a href="https://ivor2662.github.io/hotspot-guide/iphone-guide.html" class="button iphone">iPhone 熱點教學</a>
   </div>
 </body>
 </html>
